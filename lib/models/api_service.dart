@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/contact_model.dart';
+import 'contact_model.dart';
 
 class ApiService {
   // GANTI IP INI DENGAN IP LAPTOP ANDA!
   // Contoh: "http://192.168.1.10/api_contacts";
-  static const String baseUrl = "http://192.168.1.10/api_contacts";
+  static const String baseUrl = "http://192.168.1.24/api_contacts";
 
   Future<List<Contact>> getContacts() async {
     try {
